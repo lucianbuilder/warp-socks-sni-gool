@@ -51,6 +51,6 @@ set -e
 #    --dns-redirect-ipv4-to=127.0.0.1 \
 #    --verbose
 echo "Run sniproxy ..." && \
-	nohup ./warp-plus -v --gool & 
+	nohup ./warp-plus --scan -v --gool & 
 	proxychains4 sniproxy -c /etc/sniproxy.conf -f
 #	sniproxy -c /etc/sniproxytest.conf -f
